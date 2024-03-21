@@ -25,7 +25,7 @@ const Book = () => {
     }, []);
 
     function getBooks() {
-        fetch('http://localhost:8080/book')
+        fetch('https://backendlib-app.azurewebsites.net/book')
             .then(response => {
                 return response.text();
             })

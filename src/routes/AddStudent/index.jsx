@@ -23,7 +23,7 @@ const AddStudent = () => {
         event.preventDefault();
 
         try {
-            let url = 'http://localhost:8080/student';
+            let url = 'https://backendlib-app.azurewebsites.net/student';
             const config = {
                 method: 'POST',
                 headers: {

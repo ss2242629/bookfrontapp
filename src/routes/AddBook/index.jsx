@@ -26,7 +26,7 @@ const AddBook = () => {
         event.preventDefault();
 
         try {
-            let url = 'http://localhost:8080/book';
+            let url = 'https://backendlib-app.azurewebsites.net/book';
             const config = {
                 method: 'POST',
                 headers: {

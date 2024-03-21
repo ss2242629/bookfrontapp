@@ -25,7 +25,7 @@ const Student = () => {
     }, []);
 
     function getStudents() {
-        fetch('http://localhost:8080/student')
+        fetch('https://backendlib-app.azurewebsites.net/student')
             .then(response => {
                 return response.text();
             })

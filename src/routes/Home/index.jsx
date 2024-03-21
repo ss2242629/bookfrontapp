@@ -21,7 +21,7 @@ const Home = () => {
     }, [merchants]);
 
     function getMerchant() {
-        fetch('http://localhost:3001/')
+        fetch('https://backendlib-app.azurewebsites.net/')
             .then(response => {
                 return response.text();
             })
@@ -33,7 +33,7 @@ const Home = () => {
     function createMerchant() {
         let name = prompt('Enter merchant name');
         let email = prompt('Enter merchant email');
-        fetch('http://localhost:3001/merchants', {
+        fetch('https://backendlib-app.azurewebsites.net/merchants', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json',
@@ -51,7 +51,7 @@ const Home = () => {
 
     function deleteMerchant() {
         let id = prompt('Enter merchant id');
-        fetch(`http://localhost:3001/merchants/1`, {
+        fetch(`https://backendlib-app.azurewebsites.net/merchants/1`, {
             method: 'DELETE',
         })
             .then(response => {
